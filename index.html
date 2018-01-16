@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <title>Overwatch Counter Pick</title>
+</head>
+<body>
+    <h1>Selector</h1> <br>
+    <from>
+    <select id="choice" class="selectpicker"  standard title="Choose one of the following..."> 
+        <!--<option value="Select Hero" selected>--Select Hero--</option>-->
+        <!-- Offense -->
+        <optgroup label="Offense">
+            <option value="Doomfist">Doomfist</option>
+            <option value="McCree">McCree</option>
+            <option value="Phara">Phara</option>
+            <option value="Reaper">Reaper</option>
+            <option value="Soldier: 76">Soldier: 76</option>
+            <option value="Sombra">Sombra</option>
+            <option value="Tracer">Tracer</option>
+        </optgroup>
+        <!-- Defense -->
+        <optgroup label="Defense">
+            <option value="Bastion">Bastion</option>
+            <option value="Hanzo">Hanzo</option>
+            <option value="Junkrat">Junkrat</option>
+            <option value="Mei">Mei</option>
+            <option value="Torbjorn">Torbjorn</option>
+            <option value="Widowmaker">Widowmaker</option>
+        </optgroup>
+        <!-- Tank -->
+        <optgroup label="tank">
+            <option value="Dva">D.Va</option>
+            <option value="Orisa">Orisa</option>
+            <option value="Reinhardt">Reinhardt</option>
+            <option value="Roadhog">Roadhog</option>
+            <option value="Winston">Winston</option>
+            <option value="Zarya">Zarya</option>
+        </optgroup>
+        <!-- Support -->
+        <optgroup label="Support">
+            <option value="Ana">Ana</option>
+            <option value="Lucio">Lucio</option>
+            <option value="Mercy">Mercy</option>
+            <option value="Moira">Moria</option>
+            <option value="Symmetra">Symmetra</option>
+            <option value="Zenyatta">Zenyatta</option>
+        </optgroup>
+    </select>
+    </from>
+    <button type="button" class="btn btn-primary" onclick="grab_hero()">Submit</button>
+    <br>
+    <p id='pick'></p>
+    <img id="hero_img" src="">
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src='app.js'></script>
+</body>
+</html>
